@@ -1,0 +1,38 @@
+<?php include 'views/menuh.html'; ?>
+
+<section>
+    <article id="details">
+        <div><img src="img/moon.jpg" alt="photo base lunaire"></div>
+    	<div>
+    	    <p>Sed commodo turpis et libero lobortis, eu dapibus ex convallis. Vestibulum eleifend laoreet enim sed hendrerit. Cras suscipit, urna vitae mollis lacinia, mi magna maximus lorem.</p>
+        	<p>Proin sit amet convallis tellus. Ut tempus, massa vel suscipit condimentum, libero enim rutrum nisl.</p>
+        	<p>Praesent ac 249 000e.</p>
+        </div>
+    </article>
+    <article>
+        <form id="contactForm">
+            <fieldset>
+                <legend>Contactez nous</legend>
+                <label for="myName">Nom :</label>
+                <input type="text" name="myName" id="myName" required>
+                <br>
+                <label for="myLname">Prénom :</label>
+                <input type="text" name="myLname" id="myLname" required>
+                <br>
+                <label for="myMail">Mail :</label>
+                <input type="text" name="myMail" id="myMail" required>
+                <br>
+                <label for="myMessage">Message :</label>
+                <textarea type="text" name="myMessage" id="myMessage" required></textarea>
+                
+                <input type="hidden" name="myDestination" id="myDestination" value="lune">
+                <br>
+                <br>
+                <div id="errorForm"><p></p></div>
+                <button type="button" class="sendForm">
+                    Valider
+                </button>
+            </fieldset>
+        </form>
+    </article>
+</section>

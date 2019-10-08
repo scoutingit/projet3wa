@@ -1,0 +1,8 @@
+<section id="admin">
+    <?php if(isset($_SESSION["logged"]) && $_SESSION["logged"] == "1"){
+        require_once 'admin.html';
+    }
+    else { 
+        require_once 'login.html';
+    } ?>
+</section>

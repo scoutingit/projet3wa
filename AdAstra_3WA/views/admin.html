@@ -1,0 +1,35 @@
+ <article>
+    <h2>Administration</h2>
+    
+    <a href="?page=unlog&unlog=true"><button type="button" id="sendForm">
+        <i class="fas fa-sign-out-alt"></i>
+    </button></a>
+    
+    <div id="mailTo">
+        <form>
+            <fieldset>
+                <legend>Réponse</legend>
+                <label for="mailToMail">Destinataire : 
+                <br><span>mail</span></label>
+                <input type="hidden" name="mailToMail" id="mailToMail" value="">
+                <input type="hidden" name="mailToId" id="mailToId" value="">
+                <br><br>
+                <label for="mailMessage">Message :</label>
+                <br>
+                <textarea type="text" name="mailMessage" id="mailMessage"></textarea>
+                <br>
+                <div id="errorForm"><p></p></div>
+                <button type="button" class="sendForm">
+                    Envoyer
+                </button>
+                <button type="button" id="closeForm">
+                    Fermer
+                </button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <div id="allMessage">
+        <!--généré en js-->
+    </div>
+</article>

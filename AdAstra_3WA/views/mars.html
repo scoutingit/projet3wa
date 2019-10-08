@@ -1,0 +1,38 @@
+<?php include 'views/menuh.html'; ?>
+
+<section>
+    <article id="details">
+        <div><img src="img/mars.jpg" alt="photo base marsienne"></div>
+    	<div>
+    	    <p>Aenean rutrum cursus ipsum, id imperdiet dui pharetra venenatis. Ut et erat libero. Proin hendrerit leo a venenatis venenatis. Cras nibh felis, ornare ac nisi ac, hendrerit sagittis libero.</p>
+        	<p>Nullam sed lorem elementum, facilisis odio eu, aliquam justo. In hac habitasse platea dictumst. Morbi arcu nisi, pellentesque in lorem vitae, luctus aliquam ex.</p>
+        	<p>Praesent ac 1 200 000e.</p>
+        </div>
+    </article>
+    <article>
+        <form id="contactForm">
+            <fieldset>
+                <legend>Contactez nous</legend>
+                <label for="myName">Nom :</label>
+                <input type="text" name="myName" id="myName" required>
+                <br>
+                <label for="myLname">Prénom :</label>
+                <input type="text" name="myLname" id="myLname" required>
+                <br>
+                <label for="myMail">Mail :</label>
+                <input type="text" name="myMail" id="myMail" required>
+                <br>
+                <label for="myMessage">Message :</label>
+                <textarea type="text" name="myMessage" id="myMessage" required></textarea>
+                
+                <input type="hidden" name="myDestination" id="myDestination" value="mars">
+                <br>
+                <br>
+                <div id="errorForm"><p></p></div>
+                <button type="button" class="sendForm">
+                    Valider
+                </button>
+            </fieldset>
+        </form>
+    </article>
+</section>
