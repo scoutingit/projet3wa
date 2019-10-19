@@ -2,15 +2,7 @@
   box-sizing: border-box;
 }
 
-html{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size:62.5%;
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-body, div, span, applet, object, iframe, blockquote, pre,
+html, body, div, span, applet, object, iframe, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -22,13 +14,27 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+iframe{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 h1, h2, h3, h4, h5, h6, p{
   border: 0;
   vertical-align: baseline;
-  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -37,7 +43,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-  font-size:1.6rem;
 	line-height: 1;
 }
 main {
