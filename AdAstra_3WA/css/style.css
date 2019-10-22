@@ -57,10 +57,13 @@ header h4::before{
 main{
     max-width:90%;
     margin:0 auto;
+    min-height: calc(100vh - 180px);
 }
 
 footer{
-    padding: 20px;
+    padding: 15px;
+    background-color: #283b57;
+    border-top: 2px solid white;
 }
 
 form{
@@ -118,6 +121,21 @@ article a button{
     font-size: 2.5rem;
     margin: 15px 2px;
     padding: 0px 2px 2px 4px;
+}
+
+small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+small p:nth-of-type(2){
+    font-size:1rem;
+}
+
+small ul{
+    padding:0;
+    line-height: 1.5;
 }
 /*///////Autre////////*/
 #gotop{
@@ -208,6 +226,17 @@ article a button{
     margin: 0 auto;
 }
 
+.stars p{
+    background-color: #010103;
+    font-size: 2rem;
+    width: 250px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+}
+
 .overHome{
     position:absolute;
     display:none;
@@ -239,6 +268,10 @@ article a button{
     background-color: #57585a80;
     border-radius: 6px;
     border: 2px solid #dadada;
+}
+
+#errorForm{
+    margin-top:15px;
 }
 
 #errorForm p{
@@ -332,6 +365,45 @@ article a button{
 #error404{
     color:red;
 }
+
+#limitForm{
+    width:80%;
+    margin:0 auto;
+}
+
+#limitForm label{
+    text-align:left;
+    width: 100%;
+    margin-bottom:2px;
+}
+
+#limitForm input, #limitForm textarea{
+    max-width: 100%;
+}
+
+#pub{
+    display:none;
+    transition:all 0.2s ease 0s;
+}
+
+#closePub{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-family: arial black,sans-serif;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    line-height: 1.35;
+    padding-left: 2px;
+    z-index: 10;
+}
+
+#closePub:hover{
+    cursor:pointer;
+}
 /*////Responsive///*/
 @media all and (min-width: 768px){ 
 	header{
@@ -353,6 +425,16 @@ article a button{
         padding: 0px;
     }
 
+    small{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    footer{
+        margin-top:40px;
+    }
+    
     #admin label{
         min-width: 220px;
     }
@@ -406,6 +488,10 @@ article a button{
         transition:all 0.2s ease-out 0s;
     }
     
+    #pub a:hover img{
+        filter: none;
+    }
+    
     .overHome{
         background-color: #6868684a;
         z-index: 10;
@@ -434,12 +520,26 @@ article a button{
         text-align: left;
         padding: 20px;
     }
+    
+    #limitForm{
+        width:50%;
+    }
 }
 
 @media all and (min-width: 1024px){
     main{
         max-width:80%;
         margin:0 auto;
+    }
+    
+    small ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    small ul li{
+        padding:0 15px;
     }
     
     #menuh ul li a{
@@ -451,5 +551,16 @@ article a button{
     main{
         max-width:60%;
         margin:0 auto;
+    }
+    
+    small ul li{
+        padding:0 30px;
+    }
+    
+    #pub{
+        display:block;
+        position: absolute;
+        left: 0;
+        width: auto;
     }
 }
