@@ -133,4 +133,10 @@ $(function() {
         $('#errorForm p').html("");
         $('#mailTo').fadeOut("fast");
     });
+    
+    
+    //cacher la pub
+    $('#closePub').click(function(){
+        $('#pub').css("left","-160px");
+    });
 });
