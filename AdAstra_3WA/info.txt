@@ -1,6 +1,0 @@
-Accès back office: 
-Id: ironman
-Pass: admin
-
-Lien :
-https://scoutin.sites.3wa.io/Projet2/bkoffice/
