@@ -7,9 +7,9 @@ class Database
 	public function __construct()
 	{
 		try {
-			$this->pdo = new PDO('mysql:host=localhost;dbname=ly-31_scoutin_projet2;charset=utf8', 
-			'scoutin', 
-			'YWNlNjkzM2FmMzYyYzhjYWJiMGFlODc1!3Wa84753Wa!', 
+			$this->pdo = new PDO('mysql:host=bddserverhost;dbname=bddname;charset=utf8', 
+			'bdduser', 
+			'bddpasse', 
 			array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 		}
 		catch (Exeption $e) { 
