@@ -1,0 +1,22 @@
+
+# HTID:12776103: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:12776103:
+RewriteEngine On
+RewriteBase /
+#^= début //$ = fin#
+#(.*) = $1 // . veut dire n'importe quoi et * autant de fois que nécessaire#
+#[L] = "exit/break"#
+RewriteRule ^css/(.*)$ css/$1 [L]
+RewriteRule ^js/(.*)$ js/$1 [L]
+RewriteRule ^img/(.*)$ img/$1 [L]
+#url type parametre1/param2/param3/ #
+#[a-zA-Z0-9\-] = toutes lettres minuscule et majuscule de a à z et nombre de 0 a 9 et les - (tirets)#
+RewriteRule ^([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)/$ index.php?c=$1&a=$2&p=$3 [L] 
+#url type parametre1/param2/ #
+RewriteRule ^([a-zA-Z0-9\-]*)/([a-zA-Z0-9\-]*)/$ index.php?c=$1&a=$2 [L]
+#url type parametre1/ #
+RewriteRule ^([a-zA-Z0-9\-]*)/$ index.php?page=$1 [L]
+#url defaut / #
+RewriteRule ^(.*)/$ index.php?p=$1 [L]
+RewriteRule ^(.*)$ $1 [L]
